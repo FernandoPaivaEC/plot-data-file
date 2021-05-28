@@ -1,0 +1,39 @@
+* {
+  overflow: hidden;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+input[type='file'] {
+    display: none;
+    margin: 2rem;
+  }
+  
+label {
+    background-color:rgba(153, 102, 255, 1);
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 10rem;
+  }
+
+#canvas {
+    height: 80vh !important;
+    width: 90vw !important;
+}
