@@ -54,8 +54,6 @@ const handleFile = () => {
         reader.readAsText(inputFile)
 
         reader.addEventListener('loadend', () => {
-            console.log('ARQUIVO CARREGADO')
-
             try {
                 const inputObject = processString({
                     fileName,
@@ -78,6 +76,9 @@ const handleFile = () => {
                 data.time = time
 
                 plotFile(data)
+
+                document.querySelector('.inputContainer').style.display = 'none'
+                document.querySelector('#reset').style.display = 'block'
             } catch (err) {
                 console.log(`Erro: ${err.message}`)
             }
@@ -85,4 +86,8 @@ const handleFile = () => {
     } catch (err) {
         console.log(`Erro: ${err.message}`)
     }
+}
+
+const reset = () => {
+    window.location.reload(false)
 }

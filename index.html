@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="shortcut-icon.png">
-    <title>Plot Data File</title>
+    <title>Plotar Arquivo de Dados</title>
 </head>
 
 <body>
@@ -16,6 +16,9 @@
             <label for="inputFile">Selecionar um arquivo &#187;</label>
             <input id="inputFile" type="file" onchange="handleFile()" />
         </div>
+        <button id="reset" onclick="reset()">
+            Resetar
+        </button>
         <canvas id="canvas"></canvas>
     </div>
 

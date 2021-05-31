@@ -23,16 +23,30 @@ input[type='file'] {
     display: none;
     margin: 2rem;
   }
-  
+
+button {
+    background-color: #0000aa;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 1rem;
+    min-width: 4rem;
+    border: none;
+    display: none;
+    margin: 3rem;
+}
+
 label {
     background-color: #0000aa;
     border-radius: 0.5rem;
     color: #fff;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.3rem;
     cursor: pointer;
     padding: 1rem;
-    min-width: 10rem;
+    min-width: 4rem;
   }
 
 #canvas {
