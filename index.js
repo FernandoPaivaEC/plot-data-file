@@ -24,10 +24,10 @@ const plotFile = data => {
                 label: 'P(W)',
                 data: data.pt,
                 backgroundColor: [
-                    '#0000aa',
+                    'var(--primary-color)',
                 ],
                 borderColor: [
-                    '#0000aa',
+                    'var(--primary-color)',
                 ],
                 borderWidth: 1
             }]

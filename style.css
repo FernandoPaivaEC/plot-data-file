@@ -1,6 +1,11 @@
 * {
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
+
 
 .main {
     position: relative;
@@ -9,14 +14,33 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+
+    --primary-color: #2a2a2a;
+    --header-color: #2a2a2a;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 1rem;
+  background: var(--header-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
 
 .inputContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem;
+    margin: 1.5rem;
 }
 
 input[type='file'] {
@@ -25,25 +49,26 @@ input[type='file'] {
   }
 
 button {
-    background-color: #0000aa;
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: #fff;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     padding: 1rem;
     min-width: 4rem;
     border: none;
     display: none;
-    margin: 3rem;
+    margin: 2rem;
+    min-height: 4rem;
 }
 
 label {
-    background-color: #0000aa;
-    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    border-radius: 0.6rem;
     color: #fff;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
     padding: 1rem;
     min-width: 4rem;
