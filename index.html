@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,19 @@
     <link rel="shortcut icon" href="shortcut-icon.png">
     <title>Plot Data File</title>
 </head>
+
 <body>
     <div class="main">
         <div class='inputContainer'>
             <label for="inputFile">Selecionar um arquivo &#187;</label>
-            <input
-                id="inputFile"
-                type="file"
-                onchange="plotFile()"
-            />
+            <input id="inputFile" type="file" onchange="handleFile()" />
         </div>
-        <canvas id="canvas">
-        </canvas>
+        <canvas id="canvas"></canvas>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <script src="process.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

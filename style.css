@@ -25,12 +25,14 @@ input[type='file'] {
   }
   
 label {
-    background-color:rgba(153, 102, 255, 1);
+    background-color: #0000aa;
     border-radius: 0.5rem;
     color: #fff;
+    font-weight: 600;
+    font-size: 20px;
     cursor: pointer;
-    padding: 0.5rem;
-    width: 10rem;
+    padding: 1rem;
+    min-width: 10rem;
   }
 
 #canvas {
