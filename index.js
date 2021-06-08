@@ -72,11 +72,12 @@ const handleFile = () => {
                     }`
                 )
 
-                delete data.timestamps
                 data.time = time
 
                 plotFile(data)
-
+                const totalEnergy = document.querySelector('.totalEnergy')
+                totalEnergy.innerHTML = `Total de Energia: ${getEnergy(data)} KWh`
+                totalEnergy.style.opacity = 1
                 document.querySelector('.inputContainer').style.display = 'none'
                 document.querySelector('#reset').style.display = 'block'
             } catch (err) {

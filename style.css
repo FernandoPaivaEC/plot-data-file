@@ -14,9 +14,14 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-
     --primary-color: #2a2a2a;
     --header-color: #2a2a2a;
+}
+
+.totalEnergy {
+  font-size: 1.3rem;
+  font-weight: 600;
+  opacity: 0;
 }
 
 .header {

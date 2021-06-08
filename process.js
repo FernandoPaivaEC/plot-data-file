@@ -69,3 +69,21 @@ const processString = ({ fileName, dataString, pattern }) => {
         console.log(`Erro: ${err.message}`)
     }
 }
+
+const getEnergy = data => {
+    let sum = 0
+
+    for (let i = 0; i < data.pt.length; i++) {
+        const t0 = new Date(data.timestamps[i]).getTime()
+        const t = new Date(data.timestamps[i + 1]).getTime()
+
+        const passedTimeInHours = Math.abs(t - t0)/1000 * 1/3600
+        const prod = Number(data.pt[i]) * passedTimeInHours
+
+        if (!isNaN(prod)) {
+            sum = prod + sum
+        }
+    }
+
+    return (sum/1000).toFixed(3).replace('.',',')
+}
